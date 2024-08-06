@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "CalculadoraSimples": {
+      "commandName": "Project",
+      "workingDirectory": "C:\\Users\\fernando.nprimo\\Documents\\CalculadoraAvançada\\CalculadoraSimples\\CalculadoraSimples\\bin\\Debug\\net6.0-windows"
+    }
+  }
+}

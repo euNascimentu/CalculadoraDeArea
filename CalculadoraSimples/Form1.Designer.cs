@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCalculadoraSimp));
             panelAreaQuad = new Panel();
+            btnLimparQuad = new Button();
             lblTitResultado = new Label();
             lblTitExpressao = new Label();
             btnCalcular = new Button();
@@ -40,6 +41,7 @@
             txtLadoQuad = new TextBox();
             pictureBox2 = new PictureBox();
             panelAreaRet = new Panel();
+            btnLimparRet = new Button();
             lblExpressaoRet = new Label();
             lblResultadoRet = new Label();
             lblDescFormula = new Label();
@@ -51,6 +53,7 @@
             pictureBox3 = new PictureBox();
             btnCalcularRet = new Button();
             panelAreaCirc = new Panel();
+            btnLimparCirc = new Button();
             lblResultadoCirc = new Label();
             lblExpressaoCirc = new Label();
             lblRaio = new Label();
@@ -67,6 +70,33 @@
             lblTitulo = new Label();
             rdbAreaTrap = new RadioButton();
             pictureBox1 = new PictureBox();
+            panelAreaTri = new Panel();
+            btnLimparTri = new Button();
+            lblDescFormulaTri = new Label();
+            lblFormulaTri = new Label();
+            lblResultTri = new Label();
+            lblExpTri = new Label();
+            txtAlturaTri = new TextBox();
+            txtBaseTri = new TextBox();
+            lblAlturaTri = new Label();
+            lblBaseTri = new Label();
+            btnCalcularTri = new Button();
+            pictureBox5 = new PictureBox();
+            panelAreaTrap = new Panel();
+            btnLimpar = new Button();
+            lblFormulaTrap = new Label();
+            lblDescFormTrap = new Label();
+            lblResultTrap = new Label();
+            lblExpTrap = new Label();
+            lblAlturaTap = new Label();
+            lblBase2 = new Label();
+            lblBase1 = new Label();
+            txtAltTrap = new TextBox();
+            txtBase2 = new TextBox();
+            txtBase1 = new TextBox();
+            btnCalcularTrap = new Button();
+            pictureBox6 = new PictureBox();
+            pictureBox7 = new PictureBox();
             panelAreaQuad.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panelAreaRet.SuspendLayout();
@@ -74,11 +104,17 @@
             panelAreaCirc.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panelAreaTri.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            panelAreaTrap.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             SuspendLayout();
             // 
             // panelAreaQuad
             // 
             panelAreaQuad.BackColor = Color.DarkGreen;
+            panelAreaQuad.Controls.Add(btnLimparQuad);
             panelAreaQuad.Controls.Add(lblTitResultado);
             panelAreaQuad.Controls.Add(lblTitExpressao);
             panelAreaQuad.Controls.Add(btnCalcular);
@@ -92,6 +128,15 @@
             panelAreaQuad.Name = "panelAreaQuad";
             panelAreaQuad.Size = new Size(586, 426);
             panelAreaQuad.TabIndex = 0;
+            // 
+            // btnLimparQuad
+            // 
+            btnLimparQuad.Location = new Point(474, 281);
+            btnLimparQuad.Name = "btnLimparQuad";
+            btnLimparQuad.Size = new Size(75, 23);
+            btnLimparQuad.TabIndex = 9;
+            btnLimparQuad.Text = "Limpar";
+            btnLimparQuad.UseVisualStyleBackColor = true;
             // 
             // lblTitResultado
             // 
@@ -184,6 +229,7 @@
             // panelAreaRet
             // 
             panelAreaRet.BackColor = Color.LightGray;
+            panelAreaRet.Controls.Add(btnLimparRet);
             panelAreaRet.Controls.Add(lblExpressaoRet);
             panelAreaRet.Controls.Add(lblResultadoRet);
             panelAreaRet.Controls.Add(lblDescFormula);
@@ -198,6 +244,15 @@
             panelAreaRet.Name = "panelAreaRet";
             panelAreaRet.Size = new Size(586, 426);
             panelAreaRet.TabIndex = 9;
+            // 
+            // btnLimparRet
+            // 
+            btnLimparRet.Location = new Point(457, 330);
+            btnLimparRet.Name = "btnLimparRet";
+            btnLimparRet.Size = new Size(75, 23);
+            btnLimparRet.TabIndex = 10;
+            btnLimparRet.Text = "Limpar";
+            btnLimparRet.UseVisualStyleBackColor = true;
             // 
             // lblExpressaoRet
             // 
@@ -295,8 +350,10 @@
             // panelAreaCirc
             // 
             panelAreaCirc.BackColor = Color.Bisque;
+            panelAreaCirc.Controls.Add(btnLimparCirc);
             panelAreaCirc.Controls.Add(lblResultadoCirc);
             panelAreaCirc.Controls.Add(lblExpressaoCirc);
+            panelAreaCirc.Controls.Add(panelAreaTri);
             panelAreaCirc.Controls.Add(lblRaio);
             panelAreaCirc.Controls.Add(label1);
             panelAreaCirc.Controls.Add(lblDescFormulaCirc);
@@ -306,8 +363,17 @@
             panelAreaCirc.Controls.Add(btnCalcularCirc);
             panelAreaCirc.Location = new Point(202, 12);
             panelAreaCirc.Name = "panelAreaCirc";
-            panelAreaCirc.Size = new Size(586, 423);
+            panelAreaCirc.Size = new Size(586, 426);
             panelAreaCirc.TabIndex = 10;
+            // 
+            // btnLimparCirc
+            // 
+            btnLimparCirc.Location = new Point(485, 327);
+            btnLimparCirc.Name = "btnLimparCirc";
+            btnLimparCirc.Size = new Size(75, 23);
+            btnLimparCirc.TabIndex = 9;
+            btnLimparCirc.Text = "Limpar";
+            btnLimparCirc.UseVisualStyleBackColor = true;
             // 
             // lblResultadoCirc
             // 
@@ -452,6 +518,7 @@
             rdbAreaTri.TabStop = true;
             rdbAreaTri.Text = "Área do Triangulo";
             rdbAreaTri.UseVisualStyleBackColor = true;
+            rdbAreaTri.CheckedChanged += rdbAreaTri_CheckedChanged;
             // 
             // lblTitulo
             // 
@@ -476,6 +543,7 @@
             rdbAreaTrap.TabStop = true;
             rdbAreaTrap.Text = "Área do Trapézio";
             rdbAreaTrap.UseVisualStyleBackColor = true;
+            rdbAreaTrap.CheckedChanged += rdbAreaTrap_CheckedChanged;
             // 
             // pictureBox1
             // 
@@ -487,12 +555,283 @@
             pictureBox1.TabIndex = 7;
             pictureBox1.TabStop = false;
             // 
+            // panelAreaTri
+            // 
+            panelAreaTri.BackColor = Color.MediumAquamarine;
+            panelAreaTri.Controls.Add(btnLimparTri);
+            panelAreaTri.Controls.Add(lblDescFormulaTri);
+            panelAreaTri.Controls.Add(lblFormulaTri);
+            panelAreaTri.Controls.Add(lblResultTri);
+            panelAreaTri.Controls.Add(lblExpTri);
+            panelAreaTri.Controls.Add(txtAlturaTri);
+            panelAreaTri.Controls.Add(txtBaseTri);
+            panelAreaTri.Controls.Add(lblAlturaTri);
+            panelAreaTri.Controls.Add(lblBaseTri);
+            panelAreaTri.Controls.Add(btnCalcularTri);
+            panelAreaTri.Controls.Add(pictureBox5);
+            panelAreaTri.Location = new Point(0, 0);
+            panelAreaTri.Name = "panelAreaTri";
+            panelAreaTri.Size = new Size(586, 426);
+            panelAreaTri.TabIndex = 9;
+            // 
+            // btnLimparTri
+            // 
+            btnLimparTri.Location = new Point(485, 318);
+            btnLimparTri.Name = "btnLimparTri";
+            btnLimparTri.Size = new Size(75, 23);
+            btnLimparTri.TabIndex = 10;
+            btnLimparTri.Text = "Limpar";
+            btnLimparTri.UseVisualStyleBackColor = true;
+            // 
+            // lblDescFormulaTri
+            // 
+            lblDescFormulaTri.AutoSize = true;
+            lblDescFormulaTri.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblDescFormulaTri.Location = new Point(337, 133);
+            lblDescFormulaTri.Name = "lblDescFormulaTri";
+            lblDescFormulaTri.Size = new Size(156, 21);
+            lblDescFormulaTri.TabIndex = 9;
+            lblDescFormulaTri.Text = "B * A (Base X Altura)";
+            // 
+            // lblFormulaTri
+            // 
+            lblFormulaTri.AutoSize = true;
+            lblFormulaTri.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblFormulaTri.Location = new Point(337, 77);
+            lblFormulaTri.Name = "lblFormulaTri";
+            lblFormulaTri.Size = new Size(90, 21);
+            lblFormulaTri.TabIndex = 8;
+            lblFormulaTri.Text = "<- Fórmula";
+            // 
+            // lblResultTri
+            // 
+            lblResultTri.AutoSize = true;
+            lblResultTri.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblResultTri.Location = new Point(192, 338);
+            lblResultTri.Name = "lblResultTri";
+            lblResultTri.Size = new Size(0, 21);
+            lblResultTri.TabIndex = 7;
+            // 
+            // lblExpTri
+            // 
+            lblExpTri.AutoSize = true;
+            lblExpTri.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblExpTri.Location = new Point(28, 338);
+            lblExpTri.Name = "lblExpTri";
+            lblExpTri.Size = new Size(0, 21);
+            lblExpTri.TabIndex = 6;
+            // 
+            // txtAlturaTri
+            // 
+            txtAlturaTri.Location = new Point(192, 312);
+            txtAlturaTri.Name = "txtAlturaTri";
+            txtAlturaTri.Size = new Size(100, 23);
+            txtAlturaTri.TabIndex = 5;
+            txtAlturaTri.KeyPress += txtAlturaTri_keyPress;
+            // 
+            // txtBaseTri
+            // 
+            txtBaseTri.Location = new Point(28, 312);
+            txtBaseTri.Name = "txtBaseTri";
+            txtBaseTri.Size = new Size(100, 23);
+            txtBaseTri.TabIndex = 4;
+            // 
+            // lblAlturaTri
+            // 
+            lblAlturaTri.AutoSize = true;
+            lblAlturaTri.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblAlturaTri.Location = new Point(192, 288);
+            lblAlturaTri.Name = "lblAlturaTri";
+            lblAlturaTri.Size = new Size(54, 21);
+            lblAlturaTri.TabIndex = 3;
+            lblAlturaTri.Text = "Altura";
+            // 
+            // lblBaseTri
+            // 
+            lblBaseTri.AutoSize = true;
+            lblBaseTri.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblBaseTri.Location = new Point(28, 288);
+            lblBaseTri.Name = "lblBaseTri";
+            lblBaseTri.Size = new Size(44, 21);
+            lblBaseTri.TabIndex = 2;
+            lblBaseTri.Text = "Base";
+            // 
+            // btnCalcularTri
+            // 
+            btnCalcularTri.Location = new Point(395, 318);
+            btnCalcularTri.Name = "btnCalcularTri";
+            btnCalcularTri.Size = new Size(75, 23);
+            btnCalcularTri.TabIndex = 1;
+            btnCalcularTri.Text = "Calcular";
+            btnCalcularTri.UseVisualStyleBackColor = true;
+            btnCalcularTri.Click += btnCalcularTri_Click;
+            // 
+            // pictureBox5
+            // 
+            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
+            pictureBox5.Location = new Point(28, 31);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(284, 202);
+            pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox5.TabIndex = 0;
+            pictureBox5.TabStop = false;
+            // 
+            // panelAreaTrap
+            // 
+            panelAreaTrap.BackColor = SystemColors.ControlDark;
+            panelAreaTrap.Controls.Add(btnLimpar);
+            panelAreaTrap.Controls.Add(lblFormulaTrap);
+            panelAreaTrap.Controls.Add(lblDescFormTrap);
+            panelAreaTrap.Controls.Add(lblResultTrap);
+            panelAreaTrap.Controls.Add(lblExpTrap);
+            panelAreaTrap.Controls.Add(lblAlturaTap);
+            panelAreaTrap.Controls.Add(lblBase2);
+            panelAreaTrap.Controls.Add(lblBase1);
+            panelAreaTrap.Controls.Add(txtAltTrap);
+            panelAreaTrap.Controls.Add(txtBase2);
+            panelAreaTrap.Controls.Add(txtBase1);
+            panelAreaTrap.Controls.Add(btnCalcularTrap);
+            panelAreaTrap.Controls.Add(pictureBox6);
+            panelAreaTrap.Location = new Point(202, 12);
+            panelAreaTrap.Name = "panelAreaTrap";
+            panelAreaTrap.Size = new Size(586, 426);
+            panelAreaTrap.TabIndex = 11;
+            // 
+            // btnLimpar
+            // 
+            btnLimpar.Location = new Point(417, 372);
+            btnLimpar.Name = "btnLimpar";
+            btnLimpar.Size = new Size(75, 23);
+            btnLimpar.TabIndex = 12;
+            btnLimpar.Text = "Limpar";
+            btnLimpar.UseVisualStyleBackColor = true;
+            btnLimpar.Click += btnLimpar_Click;
+            // 
+            // lblFormulaTrap
+            // 
+            lblFormulaTrap.AutoSize = true;
+            lblFormulaTrap.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            lblFormulaTrap.Location = new Point(379, 98);
+            lblFormulaTrap.Name = "lblFormulaTrap";
+            lblFormulaTrap.Size = new Size(109, 25);
+            lblFormulaTrap.TabIndex = 11;
+            lblFormulaTrap.Text = "<- Fórmula";
+            // 
+            // lblDescFormTrap
+            // 
+            lblDescFormTrap.AutoSize = true;
+            lblDescFormTrap.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblDescFormTrap.Location = new Point(379, 143);
+            lblDescFormTrap.Name = "lblDescFormTrap";
+            lblDescFormTrap.Size = new Size(83, 21);
+            lblDescFormTrap.TabIndex = 10;
+            lblDescFormTrap.Text = "(B+b)*h/2";
+            // 
+            // lblResultTrap
+            // 
+            lblResultTrap.AutoSize = true;
+            lblResultTrap.BorderStyle = BorderStyle.FixedSingle;
+            lblResultTrap.Location = new Point(235, 352);
+            lblResultTrap.Name = "lblResultTrap";
+            lblResultTrap.Size = new Size(2, 17);
+            lblResultTrap.TabIndex = 9;
+            // 
+            // lblExpTrap
+            // 
+            lblExpTrap.AutoSize = true;
+            lblExpTrap.BorderStyle = BorderStyle.FixedSingle;
+            lblExpTrap.Location = new Point(33, 352);
+            lblExpTrap.Name = "lblExpTrap";
+            lblExpTrap.Size = new Size(2, 17);
+            lblExpTrap.TabIndex = 8;
+            // 
+            // lblAlturaTap
+            // 
+            lblAlturaTap.AutoSize = true;
+            lblAlturaTap.Location = new Point(321, 293);
+            lblAlturaTap.Name = "lblAlturaTap";
+            lblAlturaTap.Size = new Size(39, 15);
+            lblAlturaTap.TabIndex = 7;
+            lblAlturaTap.Text = "Altura";
+            // 
+            // lblBase2
+            // 
+            lblBase2.AutoSize = true;
+            lblBase2.Location = new Point(174, 293);
+            lblBase2.Name = "lblBase2";
+            lblBase2.Size = new Size(49, 15);
+            lblBase2.TabIndex = 6;
+            lblBase2.Text = "Base (b)";
+            // 
+            // lblBase1
+            // 
+            lblBase1.AutoSize = true;
+            lblBase1.Location = new Point(33, 290);
+            lblBase1.Name = "lblBase1";
+            lblBase1.Size = new Size(49, 15);
+            lblBase1.TabIndex = 5;
+            lblBase1.Text = "Base (B)";
+            // 
+            // txtAltTrap
+            // 
+            txtAltTrap.Location = new Point(321, 312);
+            txtAltTrap.Name = "txtAltTrap";
+            txtAltTrap.Size = new Size(100, 23);
+            txtAltTrap.TabIndex = 4;
+            txtAltTrap.KeyPress += txtAltTrap_KeyPress;
+            // 
+            // txtBase2
+            // 
+            txtBase2.Location = new Point(174, 312);
+            txtBase2.Name = "txtBase2";
+            txtBase2.Size = new Size(100, 23);
+            txtBase2.TabIndex = 3;
+            // 
+            // txtBase1
+            // 
+            txtBase1.Location = new Point(33, 313);
+            txtBase1.Name = "txtBase1";
+            txtBase1.Size = new Size(100, 23);
+            txtBase1.TabIndex = 2;
+            // 
+            // btnCalcularTrap
+            // 
+            btnCalcularTrap.Location = new Point(498, 372);
+            btnCalcularTrap.Name = "btnCalcularTrap";
+            btnCalcularTrap.Size = new Size(75, 23);
+            btnCalcularTrap.TabIndex = 1;
+            btnCalcularTrap.Text = "Calcular";
+            btnCalcularTrap.UseVisualStyleBackColor = true;
+            btnCalcularTrap.Click += btnCalcularTrap_Click;
+            // 
+            // pictureBox6
+            // 
+            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
+            pictureBox6.Location = new Point(28, 31);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(326, 211);
+            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox6.TabIndex = 0;
+            pictureBox6.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
+            pictureBox7.Location = new Point(202, 12);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(586, 426);
+            pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox7.TabIndex = 12;
+            pictureBox7.TabStop = false;
+            // 
             // frmCalculadoraSimp
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Desktop;
             ClientSize = new Size(800, 450);
+            Controls.Add(pictureBox7);
+            Controls.Add(panelAreaTrap);
             Controls.Add(panelAreaCirc);
             Controls.Add(panelAreaRet);
             Controls.Add(pictureBox1);
@@ -515,6 +854,13 @@
             panelAreaCirc.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panelAreaTri.ResumeLayout(false);
+            panelAreaTri.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            panelAreaTrap.ResumeLayout(false);
+            panelAreaTrap.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -559,5 +905,35 @@
         private PictureBox pictureBox4;
         private TextBox txtRaioCirc;
         private Button btnCalcularCirc;
+        private Panel panelAreaTri;
+        private Label lblDescFormulaTri;
+        private Label lblFormulaTri;
+        private Label lblResultTri;
+        private Label lblExpTri;
+        private TextBox txtAlturaTri;
+        private TextBox txtBaseTri;
+        private Label lblAlturaTri;
+        private Label lblBaseTri;
+        private Button btnCalcularTri;
+        private PictureBox pictureBox5;
+        private Panel panelAreaTrap;
+        private Label lblFormulaTrap;
+        private Label lblDescFormTrap;
+        private Label lblResultTrap;
+        private Label lblExpTrap;
+        private Label lblAlturaTap;
+        private Label lblBase2;
+        private Label lblBase1;
+        private TextBox txtAltTrap;
+        private TextBox txtBase2;
+        private TextBox txtBase1;
+        private Button btnCalcularTrap;
+        private PictureBox pictureBox6;
+        private Button btnLimpar;
+        private PictureBox pictureBox7;
+        private Button btnLimparTri;
+        private Button btnLimparCirc;
+        private Button btnLimparRet;
+        private Button btnLimparQuad;
     }
 }
